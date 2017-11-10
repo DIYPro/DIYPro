@@ -2593,66 +2593,7 @@ canvas {
 			</div>
 			<!-- end container -->
 		</header>
-		<!--가로툴박스 -->
-		<div id='cssmenu'>
-			<ul>
-				<li class='has-sub'><a href='#'><i class="fa fa-3x fa-list"
-						aria-hidden="true" style="vertical-align: middle;"></i></a>
-					<ul>
-						<li><a href='#' onclick="UIcontrols.saveScene()"><i
-								class="fa fa-3x fa-list" aria-hidden="true"
-								style="vertical-align: middle;"></i></a></li>
-						<li><a href='#' onclick="UIcontrols.loadScene()"><i
-								class="fa fa-3x fa-list" aria-hidden="true"
-								style="vertical-align: middle;"></i></a></li>
-					</ul></li>
-				<li><a href='#' onclick="UIcontrols.unDo()"><i
-						class="fa fa-3x fa-undo" aria-hidden="true"
-						style="vertical-align: middle;"></i></a></li>
-				<li><a href='#' onclick="UIcontrols.reDo()"><i
-						class="fa fa-3x fa-repeat" aria-hidden="true"
-						style="vertical-align: middle;"></i></a></li>
-				<li><a href='#' onclick="UIcontrols.switchCamera()"><i
-						class="fa fa-3x fa-eye" aria-hidden="true"
-						style="vertical-align: middle;"></i></a></li>
-				<li><a href='#' onclick="UIcontrols.createTempleteBricks()"><i
-						class="fa fa-3x fa-crop" aria-hidden="true"
-						style="vertical-align: middle;"></i></a></li>
-				<li><a href='#' onclick="UIcontrols.createBricks()"><i
-						class="fa fa-3x fa-cubes" aria-hidden="true"
-						style="vertical-align: middle;"></i></a></li>
-				<li><a onclick="UIcontrols.captureIMG()"><i
-						class="fa fa-3x fa-camera-retro" style="vertical-align: middle;"></i></a></li>
-				<!-- <li class='active has-sub'><a onclick=""><i
-						class="fa fa-3x fa-camera" style="vertical-align: middle;"></i></a>
-					<ul>
-						<li class='has-sub'><a href='#'><i
-								class="fa fa-2x fa-camera-retro" style="vertical-align: middle;"></i></a>
-							<ul>
-								<li><a href='#'><i class="fa fa-2x fa-camera-retro"
-										style="vertical-align: middle;"></i></a></li>
-								<li class='last'><a href='#'><i
-										class="fa fa-2x fa-camera-retro"
-										style="vertical-align: middle;"></i></a></li>
-							</ul></li>
-						<li class='has-sub'><a href='#'><i
-								class="fa fa-2x fa-folder-open-o"
-								style="vertical-align: middle;"></i></a>
-							<ul>
-								<li><a href='#'><i class="fa fa-2x fa-camera-retro"
-										style="vertical-align: middle;"></i></a></li>
-								<li class='last'><a href='#'><i
-										class="fa fa-2x fa-camera-retro"
-										style="vertical-align: middle;"></i></a></li>
-							</ul></li>
-					</ul></li> -->
-				<li class='last'><a href='#'><i class="fa fa-3x fa-trash"
-						style="vertical-align: middle;"></i></a></li>
 
-			</ul>
-		</div>
-
-		!-- 			가로툴박스 -->
 		<div id='cssmenu'>
 			<ul>
 				<li class='has-sub'><a href='#'><i class="fa fa-3x fa-list"
