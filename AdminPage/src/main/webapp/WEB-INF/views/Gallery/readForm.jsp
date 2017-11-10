@@ -112,11 +112,11 @@
 											</c:if>
 										</div>
 
-										<a class="left carousel-control" href="#myCarousel1"
+										<a class="left carousel-control" href="#"
 											role="button" data-slide="prev"> <span
 											class="fa fa-angle-left" aria-hidden="true"></span> <span
 											class="sr-only">Previous</span>
-										</a> <a class="right carousel-control" href="#myCarousel1"
+										</a> <a class="right carousel-control" href="#"
 											role="button" data-slide="next"> <span
 											class="fa fa-angle-right" aria-hidden="true"></span> <span
 											class="sr-only">Next</span>
@@ -213,7 +213,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 col-sm-4 col-xs-12">
-						<a class="navbar-brand" href="index.html"><img
+						<a class="navbar-brand" href="#"><img
 							src="/admin/resources/images/logo.png" alt=""></a>
 					</div>
 					<!-- end col -->
@@ -290,10 +290,7 @@
 									+ item.text + '</p>';
 	
 							if ("${id}" == item.id) {
-								addRow += '<button class="button button--aylen btn btn-sm" onclick="replyModify('
-										+ item.replyNum
-										+ ')">수정</button>'
-										+ '<button  onclick="deleteReply('
+								addRow += '<button  onclick="deleteReply('
 										+ item.replyNum
 										+ ')" class="button button--aylen btn btn-sm">삭제</button>'
 	
