@@ -51,8 +51,8 @@ public class FileController {
 	// C:/Users/(사용자 이름) /git/우리레포지터리
 	// 이름/AdminPage/src/main/webapp/resources/file/maps/
 
-	private String path = "C:/Users/SCITMASTER/git/Owari/AdminPage/src/main/webapp/resources/file/";
-	private String path1 = "C:/Users/SCITMASTER/git/Owari/AdminPage/src/main/webapp/resources/file/maps/";
+	private String path = "C:/Users/SCITMASTER/git/DIYPro/AdminPage/src/main/webapp/resources/file/";
+	private String path1 = "C:/Users/SCITMASTER/git/DIYPro/AdminPage/src/main/webapp/resources/file/maps/";
 
 	private Mail mail;
 
@@ -159,7 +159,7 @@ public class FileController {
 
 		System.out.println(uuid + "&&&&" + id);
 
-		String path = "C:/Users/SCITMASTER/git/Owari/AdminPage/src/main/webapp/resources/upload/";
+		String path = "C:/Users/SCITMASTER/git/DIYPro/AdminPage/src/main/webapp/resources/upload/";
 
 	
 
