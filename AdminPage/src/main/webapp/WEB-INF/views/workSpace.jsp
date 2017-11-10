@@ -327,7 +327,7 @@ canvas {
 	border: 0;
 	width: auto;
 	position: absolute;
-	left: 467.931px;
+	left: 667.931px;
 	top: 60px;
 }
 

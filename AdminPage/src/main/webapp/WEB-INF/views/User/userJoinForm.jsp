@@ -223,9 +223,6 @@
                             <!-- end row -->
                         </div>
   </form>
-     
-     
-     
                         <div class="tab-pane fade" id="step3">
                             <div class="row">
                                 <div class="emtrycart col-md-12 text-center">
@@ -241,15 +238,11 @@
             <!-- end container -->
         </section>
         
-       
-         
-
-
         <div class="topfooter">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-xs-12">
-                        <a class="navbar-brand" href="index.html"><img src="/admin/resources/images/logo.png" alt=""></a>
+                        <a class="navbar-brand" href="#"><img src="/admin/resources/images/logo.png" alt=""></a>
                     </div>
                     <!-- end col -->
 
