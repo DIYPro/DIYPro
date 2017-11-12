@@ -185,7 +185,7 @@
 	                            </div> -->
 	                        </div><!-- end banner-item -->
                         </c:forEach>
-                   </div><!-- end banner -->
+                   </div><!-- end banner -->	
                </div><!-- end container -->
            </section><!-- end section -->
           <%-- </c:if> --%>
