@@ -156,7 +156,7 @@
 								<div class="blog-desc">
 									<div class="post-padding">
 										<div class="widget-title">
-											<h4>댓글수 Comments</h4>
+											<h4>${count} Comments</h4>
 											<hr>
 										</div>
 										<div class="row">

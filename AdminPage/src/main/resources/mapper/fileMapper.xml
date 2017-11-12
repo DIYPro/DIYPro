@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.sesoc.test.dao.FileMapper">
-	<!-- ?? -->
+	
 	<select id="find"  resultType="CompanyVO">
 		SELECT * FROM ITR_COMPANY	
 	</select>
@@ -58,7 +58,7 @@
 				</if>
 			</if>
 		
-			  ORDER BY FURNITURENUM ASC
+			  ORDER BY FURNITURENUM DESC
 	</select>
 	
 	<!-- 페이징_라이브러리 -->
@@ -137,10 +137,13 @@
 		SELECT * FROM ITR_FURNITURE where type = 'Others'
 	</select>
 	
-	<!-- 가구 마우스클릭시 픽수 증가 -->
+	<!-- 가구 클릭시 히트수 증가 -->
 	<insert id="furnitureRecord" parameterType="RecordVO">
 		INSERT INTO ITR_RECORD VALUES (#{furnitureNum}, #{id}, 1, sysdate)
 	</insert>
 	
-	
+	<!-- 메시지 송신 시 담당자 이메일 보이기 -->
+	<select id="findCname" parameterType="String" resultType="String">
+		SELECT coManagerEmail FROM ITR_COMPANY where coname = #{coName}
+	</select>
 </mapper>

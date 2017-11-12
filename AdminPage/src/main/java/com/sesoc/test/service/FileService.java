@@ -14,7 +14,7 @@ import com.sesoc.test.vo.RecordVO;
 
 public interface FileService {
 
-	public void find(Model model);//??
+	public void find(Model model);
 
 	public void fileSaved(FurnitureVO vo,List<MultipartFile> files, String path,String path1);//파일 저장
 
@@ -22,7 +22,7 @@ public interface FileService {
 
 	public ArrayList<FurnitureVO> getLibraryList(Map<String, String> libraryMap, PageNavigator libraryNavi);//가구 라이브러리 목록
 
-	public FurnitureVO libraryRead(int furnitureNum);//가구 라이브러리 열람
+	public FurnitureVO libraryRead(int furnitureNum, Model model);//가구 라이브러리 열람
 
 	public FurnitureVO furniturnDelete(int furnitureNum, String path,String path1);//가구 라이브러리 삭제
 
@@ -42,6 +42,6 @@ public interface FileService {
 
 	public ArrayList<FurnitureVO> getOthersList();
 
-	public void furnitureRecord(RecordVO vo);
+	public void furnitureRecord(RecordVO vo);//hit수
 
 }

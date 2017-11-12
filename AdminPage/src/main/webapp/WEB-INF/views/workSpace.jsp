@@ -81,7 +81,6 @@ canvas {
 	width: auto;
 	position: absolute;
 	top: 280px;
-	/* 	left: 550px; */
 }
 
 #cssmenuVertic ul, #cssmenuVertic ul li, #cssmenuVertic ul ul {
@@ -327,7 +326,7 @@ canvas {
 	border: 0;
 	width: auto;
 	position: absolute;
-	left: 667.931px;
+	left: 470px;
 	top: 60px;
 }
 
@@ -816,9 +815,9 @@ canvas {
                 renderer.domElement.style.marginLeft = 'auto';
                 renderer.domElement.style.marginRight = 'auto';
                 renderer.domElement.style.marginTop = '60px';
-                
-				 container.appendChild( renderer.domElement );
-				console.log(renderer);
+                renderer.domElement.id = 'canvas';
+                container.appendChild( renderer.domElement );
+				//console.log(renderer.domElement);
                 
                 
 
@@ -1532,12 +1531,11 @@ canvas {
                 this.File = ''
 	            this.saveScene = function()
                 {
-                	
-                     for(var i=89; i<objects.length; ++i){
+                	 /* for(var i=89; i<objects.length; ++i){
                        sceneSave[i] = JSON.parse(JSON.stringify((Object)(objects[i])));                       
                                            
                     }
-                     alert('scene save complete!!')
+                     alert('scene save complete!!') */
                     
                 };
                 this.loadScene = function()//씬 불러오기 9.15 01:56
@@ -1708,6 +1706,11 @@ canvas {
                 this.captureIMG = function()
                 {
                     //saveAsImage();
+                    $(function(){
+                		var test = $('#canvas');
+                		var ival = setInterval(test.fadeOut(),test.fadeIn(),500);
+                		clearInterval(ival);
+                	});
                     
                     $.ajax({
     					url : "/admin/file/test",

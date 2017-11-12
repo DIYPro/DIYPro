@@ -10,7 +10,7 @@ import com.sesoc.test.vo.RecordVO;
 
 public interface FileDao {
 
-	public ArrayList<CompanyVO> find();//??
+	public ArrayList<CompanyVO> find();
 
 	public int fileSaved(FurnitureVO vo);//파일 저장
 
@@ -38,5 +38,7 @@ public interface FileDao {
 
 	public ArrayList<FurnitureVO> getOthersList();
 
-	public void furnitureRecord(RecordVO vo);
+	public void furnitureRecord(RecordVO vo);//hit수
+
+	public String findCname(String cname);//기업담당자 이메일
 }

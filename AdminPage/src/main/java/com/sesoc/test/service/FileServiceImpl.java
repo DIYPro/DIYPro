@@ -25,7 +25,6 @@ public class FileServiceImpl implements FileService{
 	private final int countPerPage = 10;
 	private final int pagePerGroup = 5;
 	
-	//??
 	@Override
 	public void find(Model model) {
 		ArrayList<CompanyVO> list = new ArrayList<>();
@@ -122,7 +121,9 @@ public class FileServiceImpl implements FileService{
 
 	//가구 라이브러리 열람
 	@Override
-	public FurnitureVO libraryRead(int furnitureNum) {
+	public FurnitureVO libraryRead(int furnitureNum, Model model) {
+		String cname = dao.libraryRead(furnitureNum).getCoNAME();
+		model.addAttribute("cemail", dao.findCname(cname));
 		return dao.libraryRead(furnitureNum);
 	}
 
@@ -219,6 +220,7 @@ public class FileServiceImpl implements FileService{
 		return dao.getOthersList();
 	}
 
+	//hit수
 	@Override
 	public void furnitureRecord(RecordVO vo) {
 		dao.furnitureRecord(vo);

@@ -84,6 +84,8 @@
 						<li><a href="/admin/user/userList">회원 관리</a></li>
 						<li><a href="/admin/file/libraryList?coNAME=${coName}">라이브러리 관리</a></li>
 						<li><a href="/admin/stats/statistics">전체 통계</a></li>
+						<li><a href="/admin/stats/graph1">회사 통계</a></li>
+						<li><a href="/admin/stats/graph2">가구 통계</a></li>
 					</ul></li>
 			</c:if>
 			<!-- <li><a href="#" style="font-size: 18px;">Contact</a></li> -->

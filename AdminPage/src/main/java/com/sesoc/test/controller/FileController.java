@@ -107,8 +107,8 @@ public class FileController {
 	// 가구 라이브러리 열람
 	@RequestMapping(value = "libraryRead", method = RequestMethod.GET)
 	public String libraryRead(int furnitureNum, Model model, HttpSession session) {
-		session.setAttribute("furnitureNum", service.libraryRead(furnitureNum).getFurnitureNum());
-		model.addAttribute("libraryRead", service.libraryRead(furnitureNum));
+		session.setAttribute("furnitureNum", service.libraryRead(furnitureNum, model).getFurnitureNum());
+		model.addAttribute("libraryRead", service.libraryRead(furnitureNum, model));
 		return "/Company/libraryRead";
 	}
 
@@ -156,12 +156,9 @@ public class FileController {
 		// 로그인 된 아이디
 		String id = (String) session.getAttribute("id");
 
-
 		System.out.println(uuid + "&&&&" + id);
 
 		String path = "C:/Users/SCITMASTER/git/DIYPro/AdminPage/src/main/webapp/resources/upload/";
-
-	
 
 		String fullpath = "";
 		String[] strParts = imgData.split(",");

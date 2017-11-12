@@ -19,7 +19,6 @@ public class FileDaoImpl implements FileDao {
 	@Autowired
 	private SqlSession sqlsession;
 
-	//??
 	@Override
 	public ArrayList<CompanyVO> find() {
 		FileMapper mapper = sqlsession.getMapper(FileMapper.class);
@@ -114,10 +113,18 @@ public class FileDaoImpl implements FileDao {
 		return mapper.getOthersList();
 	}
 
+	//hit수
 	@Override
 	public void furnitureRecord(RecordVO vo) {
 		FileMapper mapper = sqlsession.getMapper(FileMapper.class);
 		mapper.furnitureRecord(vo);
 		return;
+	}
+
+	//기업담당자 이메일
+	@Override
+	public String findCname(String cname) {
+		FileMapper mapper = sqlsession.getMapper(FileMapper.class);
+		return mapper.findCname(cname);
 	}
 }

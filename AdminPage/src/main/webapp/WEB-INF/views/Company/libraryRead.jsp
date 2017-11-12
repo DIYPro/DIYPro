@@ -273,6 +273,7 @@
 												<th>가구 종류</th>
 												<td>${libraryRead.type}</td>
 											</tr>
+											
 										</thead>
 
 									</table>
@@ -303,7 +304,7 @@
 									<form action="/admin/file/send" method="post" name="sendForm">
 										<article class="content">
 											<input type="text" name="coManagerEmail" id="coManagerEmail"
-												class="form-control input-lg" placeholder="ManagerEmail"
+												class="form-control input-lg" value="${cemail}" disabled="disabled"
 												style="margin: 10px; width: 70%; margin-left: auto; margin-right: auto;"
 												required="required"> <input type="text" name="title"
 												id="title" class="form-control input-lg" placeholder="Title"
